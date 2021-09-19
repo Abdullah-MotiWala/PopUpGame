@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Game Page</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navTop">
+            <div class="targetColor btn-lg mx-2 ">
+            </div>
+            Lives : <div class="btn-lg btn lives"></div>
+            <div type="button" class="border-1 border border-success bg-warning rounded px-1 mx-5">
+                <p class="emailHolder"></p>
+            </div>
+            Score : <div class="score btn-lg bg-success text-white">00</div>
+            <div class="btn-lg bg-danger text-white mx-4" onclick="signOut()"><i class="fa fa-sign-in"></i>
+                SignOut</div>
+        </div>
+        <div class="gamePortion">
+            <img src="/images/startButton.png" alt="startBtn" id="startBtns" class=" startBtn gamePlay img-fluid">
+        </div>
+        <div class="gameOver">
+            <div class="gameOverCon container">
+                <h1>You pop Wrong Balloon</h1>
+                <div class="playAgain btn btn-lg btn-warning">Play Again</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="/firebase.js"></script>
+    <script src="game.js"></script>
+
+</body>
+
+</html>
