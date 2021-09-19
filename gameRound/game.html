@@ -40,7 +40,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
-    <script src="/firebase.js"></script>
+    <script>
+        //Firebase Integeration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCKJnJOm2bKw6c2rk4gqUWjInEvGy0SykA",
+            authDomain: "hackathoneapp-01.firebaseapp.com",
+            projectId: "hackathoneapp-01",
+            storageBucket: "hackathoneapp-01.appspot.com",
+            messagingSenderId: "931839995905",
+            appId: "1:931839995905:web:0750dde6a5ca0e50d85000",
+        };
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const firestore = firebase.firestore();
+    </script>
     <script src="game.js"></script>
 
 </body>
